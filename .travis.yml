@@ -3,7 +3,7 @@ osx_image: xcode10.2
 
 language: bash
 
-befor_install:
+before_install:
  - whoami
  - echo "start of pipeline"
  - HOMEBREW_NO_AUTO_UPDATE=1
