@@ -1,0 +1,14 @@
+os: osx
+osx_image: xcode10.2
+
+language: bash
+before_install:
+ - whoami
+ - echo "start of pipeline"
+ - HOMEBREW_NO_AUTO_UPDATE=1
+script:
+  - ls
+  - chmod +x git.sh
+  - ./git.sh
+after_script:
+   - echo "end of pipeline"
