@@ -14,7 +14,7 @@ install:
  
  script:
   - ls
-  - chmod +* hello.sh
+  - chmod +x hello.sh
   - ./hello.sh
   
   after script:
