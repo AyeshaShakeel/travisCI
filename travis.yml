@@ -1,0 +1,21 @@
+os: osx
+osn_image: xcode10.2
+
+language: bash
+
+cache:
+  - directories
+   - $HOME/Library/cache/homebrew
+
+install:
+ - whoami
+ - echo"start of pipeline"
+ - HOMEBREW_ND_AUTO_UPDATE=1
+ 
+ script:
+  - ls
+  - chmod +* hello.sh
+  - ./hello.sh
+  
+  after script:
+   - echo "end of pipeline"
