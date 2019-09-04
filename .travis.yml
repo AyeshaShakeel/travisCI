@@ -5,8 +5,8 @@ language: bash
 
 befor_install:
  - whoami
- - echo"start of pipeline"
- - HOMEBREW_ND_AUTO_UPDATE=1
+ - echo "start of pipeline"
+ - HOMEBREW_NO_AUTO_UPDATE=1
  
  script:
   - ls
