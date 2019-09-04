@@ -8,7 +8,7 @@ before_install:
  - HOMEBREW_NO_AUTO_UPDATE=1
 script:
   - ls
-  - chmod +x git.sh
-  - ./git.sh
+  - chmod +x hello.sh
+  - ./hello.sh
 after_script:
    - echo "end of pipeline"
